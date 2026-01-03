@@ -47,12 +47,12 @@ jobs:
           echo "Building with scheme: $scheme"
 
           # Choose workspace or project file
-          if ls -A | grep -i '\\.xcworkspace$' >/dev/null 2>&1; then
-            filetype_parameter="workspace"
-            file_to_build=$(ls -A | grep -i '\\.xcworkspace$' | head -n1)
+          if find . -name '*.xcworkspace' | grep -q .; then
+             filetype_parameter="workspace"
+             file_to_build=$(find . -name '*.xcworkspace' | head -n1)
           else
-            filetype_parameter="project"
-            file_to_build=$(ls -A | grep -i '\\.xcodeproj$' | head -n1)
+             filetype_parameter="project"
+             file_to_build=$(find . -name '*.xcodeproj' | head -n1)
           fi
 
           # Trim whitespace
