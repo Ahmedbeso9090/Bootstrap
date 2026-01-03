@@ -3,6 +3,14 @@
 #import "NSUserDefaults+appDefaults.h"
 #import "common.h"
 
+int bootstrap();
+int unbootstrap();
+int exploitStart();
+int enableForApp(NSString* bundlePath);
+int disableForApp(NSString* bundlePath);
+int rebuildIconCache();
+int hideBootstrapApp(BOOL usreboot);
+
 void CommLog(const char* format, ...)
 {
     va_list ap;
