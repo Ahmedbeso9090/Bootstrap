@@ -31,7 +31,6 @@
 		847099922B1D855E003FA4ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847099912B1D855E003FA4ED /* Assets.xcassets */; };
 		847099952B1D855E003FA4ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847099932B1D855E003FA4ED /* LaunchScreen.storyboard */; };
 		847099982B1D855E003FA4ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847099972B1D855E003FA4ED /* main.m */; };
-		847099A32B1D868F003FA4ED /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 847099A02B1D868F003FA4ED /* Makefile */; };
 		847099A52B1D9686003FA4ED /* Bootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = 847099A42B1D9686003FA4ED /* Bootstrap.m */; };
 		84A551A82DA47BCC0015CE66 /* roothideapp.deb in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A551A72DA47BCC0015CE66 /* roothideapp.deb */; };
 		84A551A92DA47BD00015CE66 /* roothideapp.deb in Resources */ = {isa = PBXBuildFile; fileRef = 84A551A72DA47BCC0015CE66 /* roothideapp.deb */; };
