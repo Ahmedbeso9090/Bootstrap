@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#include "NSUserDefaults+appDefaults.h"
-#include "common.h"
+#import "NSUserDefaults+appDefaults.h"
+#import "common.h"
 
 void CommLog(const char* format, ...)
 {
@@ -32,7 +32,7 @@ int main(int argc, char * argv[]) {
                 exit(unbootstrap());
             } else if(strcmp(argv[1], "exploit")==0) {
                 int exploitStart();
-                exit(exploitStart(@(argv[2])));
+                exit(exploitStart([NSString stringWithUTF8String:argv[2]]));
             } else if(strcmp(argv[1], "enableapp")==0) {
                 int enableForApp(NSString* bundlePath);
                 exit(enableForApp(@(argv[2])));
