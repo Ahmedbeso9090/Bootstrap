@@ -20,6 +20,12 @@ jobs:
           default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
           echo $default | cat >default
           echo Using default scheme: $default
+      - name: Ensure basebin exists
+       run: |
+    if [ ! -d "Bootstrap/basebin" ]; then
+      mkdir -p Bootstrap/basebin
+      # Add commands to populate basebin, e.g. wget, cp, etc.
+    fi 
       - name: Build
         env:
           scheme: ${{ 'default' }}
